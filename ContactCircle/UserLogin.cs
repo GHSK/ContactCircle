@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ContactCircle
 {
-     public class Login
+     public class UserLogin
     {
         public ErrorMessages createAccount(String userName, String passWord, String emailid)
          {
@@ -17,21 +17,29 @@ namespace ContactCircle
             //if it does not exist , Check the email address(Validity). If there is an existing email id 
             //warn the user.
                 //Check whether the email ID is valid
-                return ErrorMessages.EmailNotValid;
+                //return ErrorMessages.EmailNotValid;
 
                 //If valid, Check whether it already exists
-             return ErrorMessages.EmailExists;
+            // return ErrorMessages.EmailExists;
             
             //check the password its strength. If not strong then return an error message
 
-             return ErrorMessages.PasswordNotStrong;
+             //return ErrorMessages.PasswordNotStrong;
 
                 
             //if the email id is valid then send a mail to the user to check the validity.
 
-             return ErrorMessages.Ok;
+           //  return ErrorMessages.Ok;
          }
 
+        public String LoginUser(String UserName, String Password)
+        {
+            if(UserName.Equals("Krishna")&&Password.Equals("Krishna"))
+            {
+                return "1";
+            }
+            return "";
+        }
 
          public bool isValidUserName(String UserName)
         {

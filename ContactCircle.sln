@@ -9,6 +9,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Circle", "http://localhost:
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{50fd78f7-735d-431b-81a5-fe81c3b301bf}|ContactCircle.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_10683"
 		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\Circle\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_10683\"
